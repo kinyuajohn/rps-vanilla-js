@@ -11,5 +11,75 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <h1 class="center" tabindex="0">Rock Paper Scissors</h1>
+      <a href="#p1msg" class="skip-link">Skip Scoreboard</a>
+      <section id="scoreboard" class="scoreboard">
+        <h2 class="offscreen">Scoreboard</h2>
+        <section id="all_time" class="scoreboard__section">
+          <h3 class="offscreen">All Time Scoreboard</h3>
+          <div class="scoreboard__header" aria-hidden="true">
+            <p><abbr title="Player One">P1</abbr></p>
+            <p>All Time</p>
+            <p><abbr title="Computer Player">CP</abbr></p>
+          </div>
+          <div class="scoreboard__row" role="row">
+            <div
+              id="p1_all_time_score"
+              class="scoreboard__score center"
+              role="cell"
+              aria-label="Player One All Time Wins"
+              tabindex="0"
+            >
+              0
+            </div>
+            <div
+              id="cp_all_time_score"
+              class="scoreboard__score center"
+              role="cell"
+              aria-label="Computer Player All Time Wins"
+              tabindex="0"
+            >
+              0
+            </div>
+          </div>
+        </section>
+
+        <section id="session" class="scoreboard__section">
+          <h3 class="offscreen">Session Scoreboard</h3>
+          <div class="scoreboard__header" aria-hidden="true">
+            <p><abbr title="Player One">P1</abbr></p>
+            <p>Session</p>
+            <p><abbr title="Computer Player">CP</abbr></p>
+          </div>
+          <div class="scoreboard__row" role="row">
+            <div
+              id="p1_session_score"
+              class="scoreboard__score center"
+              role="cell"
+              aria-label="Player One Wins This Session"
+              tabindex="0"
+            >
+              0
+            </div>
+            <div
+              id="cp_session_score"
+              class="scoreboard__score center"
+              role="cell"
+              aria-label="Computer Player Wins This Session"
+              tabindex="0"
+            >
+              0
+            </div>
+          </div>
+        </section>
+      </section>
+      <section id="playerBoard" class="playerboard"></section>
+      <section id="computerBoard" class="computerBoard"></section>
+    </main>
+    <form action="">
+      <button id="playAgain" class="playAgain hidden" type="submit"></button>
+    </form>
+  </body>
 </html>
