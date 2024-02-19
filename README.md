@@ -1,1 +1,1 @@
-# rps-vanilla-js
+# Rock Paper Scissors Game in Vanilla Javascript
