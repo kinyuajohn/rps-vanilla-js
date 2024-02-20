@@ -1,4 +1,4 @@
-import GameObj from "./Game";
+import GameObj from "./Game.js";
 const Game = new GameObj();
 
 const initApp = () => {
