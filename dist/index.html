@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissor</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Rock Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
       rel="stylesheet"
@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="css/main.min.css" />
     <script src="js/main.js" type="module"></script>
   </head>
+
   <body>
     <main>
       <h1 class="center" tabindex="0">Rock Paper Scissors</h1>
       <a href="#p1msg" class="skip-link">Skip Scoreboard</a>
+
       <section id="scoreboard" class="scoreboard">
         <h2 class="offscreen">Scoreboard</h2>
         <section id="all_time" class="scoreboard__section">
@@ -47,7 +49,6 @@
             </div>
           </div>
         </section>
-
         <section id="session" class="scoreboard__section">
           <h3 class="offscreen">Session Scoreboard</h3>
           <div class="scoreboard__header" aria-hidden="true">
@@ -77,7 +78,8 @@
           </div>
         </section>
       </section>
-      <section id="playerBoard" class="playerboard">
+
+      <section id="playerBoard" class="playerBoard">
         <h2
           id="p1msg"
           class="center"
@@ -98,30 +100,28 @@
           </div>
         </div>
       </section>
+
       <section id="computerBoard" class="computerBoard">
-        <h2
-          id="cpmsg"
-          class="center"
-          aria-label="Computer Chooses"
-          tabindex="0"
-        >
+        <h2 id="cpmsg" class="center" aria-label="Computer Chooses">
           Computer Chooses...
         </h2>
         <div id="cp_gameboard" class="gameboard">
           <div id="cp_rock" class="gameboard__square">
-            <img src="img/rock.png" alt="rock" tabindex="0" />
+            <img src="img/rock.png" alt="rock" />
           </div>
           <div id="cp_paper" class="gameboard__square">
-            <img src="img/paper.png" alt="paper" tabindex="0" />
+            <img src="img/paper.png" alt="paper" />
           </div>
           <div id="cp_scissors" class="gameboard__square">
-            <img src="img/scissors.png" alt="scissors" tabindex="0" />
+            <img src="img/scissors.png" alt="scissors" />
           </div>
         </div>
       </section>
     </main>
-    <form action="">
-      <button id="playAgain" class="playAgain hidden" type="submit"></button>
+    <form>
+      <button id="playAgain" type="submit" class="playAgain hidden">
+        Play Again?
+      </button>
     </form>
   </body>
 </html>
